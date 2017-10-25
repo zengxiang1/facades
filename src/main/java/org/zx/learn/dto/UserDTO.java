@@ -9,6 +9,8 @@ import java.util.Date;
  * @author xiang zeng
  */
 public class UserDTO implements Serializable{
+
+    private static final long serialVersionUID = 1L;
     private Integer id;
 
     private String realName;
@@ -77,5 +79,18 @@ public class UserDTO implements Serializable{
 
     public void setRegisterTime(Date registerTime) {
         this.registerTime = registerTime;
+    }
+
+    @Override
+    public String toString() {
+        return "UserDTO{" +
+            "id=" + id +
+            ", realName='" + realName + '\'' +
+            ", phoneNumber='" + phoneNumber + '\'' +
+            ", address='" + address + '\'' +
+            ", age=" + age +
+            ", sex='" + sex + '\'' +
+            ", registerTime=" + registerTime +
+            '}';
     }
 }

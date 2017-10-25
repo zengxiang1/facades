@@ -44,4 +44,14 @@ public class SysRoleDTO implements Serializable{
     public void setParentId(Integer parentId) {
         this.parentId = parentId;
     }
+
+    @Override
+    public String toString() {
+        return "SysRoleDTO{" +
+            "id=" + id +
+            ", roleName='" + roleName + '\'' +
+            ", resource='" + resource + '\'' +
+            ", parentId=" + parentId +
+            '}';
+    }
 }

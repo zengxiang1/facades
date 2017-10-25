@@ -44,4 +44,14 @@ public class SysResourceDTO implements Serializable{
     public void setResourcePermission(String resourcePermission) {
         this.resourcePermission = resourcePermission == null ? null : resourcePermission.trim();
     }
+
+    @Override
+    public String toString() {
+        return "SysResourceDTO{" +
+            "id=" + id +
+            ", resourceType='" + resourceType + '\'' +
+            ", resourcePath='" + resourcePath + '\'' +
+            ", resourcePermission='" + resourcePermission + '\'' +
+            '}';
+    }
 }

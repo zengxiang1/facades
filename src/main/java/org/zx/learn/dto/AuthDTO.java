@@ -71,4 +71,16 @@ public class AuthDTO implements Serializable{
     public void setSysRole(String sysRole) {
         this.sysRole = sysRole == null ? null : sysRole.trim();
     }
+
+    @Override
+    public String toString() {
+        return "AuthDTO{" +
+            "id=" + id +
+            ", userId=" + userId +
+            ", accountName='" + accountName + '\'' +
+            ", accountPwd='" + accountPwd + '\'' +
+            ", accountStatus=" + accountStatus +
+            ", sysRole='" + sysRole + '\'' +
+            '}';
+    }
 }
