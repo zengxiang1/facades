@@ -2,6 +2,7 @@ package org.zx.learn.service;
 
 
 import org.zx.learn.dto.AuthDTO;
+import org.zx.learn.dto.SysResourceDTO;
 
 /**
  *
@@ -16,6 +17,12 @@ public interface UserService {
      * @return
      */
     AuthDTO getAuthenticateInfo(String accountName);
+
+    /**
+     * 获取所有菜单接口
+     * @return
+     */
+    SysResourceDTO listAllMenu();
 
 
 }
