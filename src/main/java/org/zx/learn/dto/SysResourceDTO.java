@@ -74,4 +74,17 @@ public class SysResourceDTO implements Serializable{
     public void setParentId(Integer parentId) {
         this.parentId = parentId;
     }
+
+    @Override
+    public String toString() {
+        return "SysResourceDTO{" +
+                "id=" + id +
+                ", resourceType='" + resourceType + '\'' +
+                ", resourceName='" + resourceName + '\'' +
+                ", resourcePath='" + resourcePath + '\'' +
+                ", resourcePermission='" + resourcePermission + '\'' +
+                ", resourcePriority=" + resourcePriority +
+                ", parentId=" + parentId +
+                '}';
+    }
 }

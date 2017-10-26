@@ -4,6 +4,8 @@ package org.zx.learn.service;
 import org.zx.learn.dto.AuthDTO;
 import org.zx.learn.dto.SysResourceDTO;
 
+import java.util.List;
+
 /**
  *
  * @author xiang zeng
@@ -22,7 +24,7 @@ public interface UserService {
      * 获取所有菜单接口
      * @return
      */
-    SysResourceDTO listAllMenu();
+    List<SysResourceDTO> listAllMenu();
 
 
 }
