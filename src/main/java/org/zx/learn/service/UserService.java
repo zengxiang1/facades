@@ -24,7 +24,7 @@ public interface UserService {
      * 获取所有菜单接口
      * @return
      */
-    List<SysResourceDTO> listAllMenu();
+    List<List<SysResourceDTO>>listAllMenu();
 
 
 }
