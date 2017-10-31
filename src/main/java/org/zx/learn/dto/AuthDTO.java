@@ -7,7 +7,7 @@ import java.io.Serializable;
  *
  * @author xiang zeng
  */
-public class AuthDTO implements Serializable{
+public class AuthDTO implements Serializable {
 
 
     private static final long serialVersionUID = 1L;
