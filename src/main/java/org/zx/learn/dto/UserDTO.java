@@ -23,7 +23,7 @@ public class UserDTO implements Serializable{
 
     private String sex;
 
-    private Date registerTime;
+    private String registerTime;
 
     public Integer getId() {
         return id;
@@ -73,11 +73,11 @@ public class UserDTO implements Serializable{
         this.sex = sex == null ? null : sex.trim();
     }
 
-    public Date getRegisterTime() {
+    public String getRegisterTime() {
         return registerTime;
     }
 
-    public void setRegisterTime(Date registerTime) {
+    public void setRegisterTime(String registerTime) {
         this.registerTime = registerTime;
     }
 
