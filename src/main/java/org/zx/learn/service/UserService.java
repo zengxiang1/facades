@@ -1,8 +1,11 @@
 package org.zx.learn.service;
 
+import java.util.Map;
 
 import org.zx.learn.dto.AuthDTO;
 import org.zx.learn.dto.SysResourceDTO;
+import org.zx.learn.dto.UserDTO;
+import org.zx.learn.exception.ServiceException;
 
 import java.util.List;
 
@@ -26,5 +29,13 @@ public interface UserService {
      */
     List<List<SysResourceDTO>>listAllMenu();
 
+    /**
+     * 获取用户列表
+     * @param paramsMap
+     * @return
+     */
+    List<UserDTO>getAllUser(Map<String, String> paramsMap);
+
+    int deleteUserInfoById(List<Integer> ids) throws ServiceException;
 
 }
