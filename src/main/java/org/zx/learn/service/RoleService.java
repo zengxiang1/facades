@@ -34,4 +34,35 @@ public interface RoleService {
      * @param ids
      */
     int deleteRoleById(List<Integer> ids) throws ServiceException;
+
+    /**
+     * 查询所有顶级角色
+     * @return
+     * @throws ServiceException
+     */
+    List<SysRoleDTO> listTopRole() throws ServiceException;
+
+    /**
+     * 根据父角色id查询所有角色
+     * @param parentId
+     * @return
+     * @throws ServiceException
+     */
+    List<SysRoleDTO> listRoleByParent(Integer parentId) throws ServiceException;
+
+    /**
+     * 保存角色
+     * @param sysRoleDTO
+     * @return
+     * @throws ServiceException
+     */
+    int saveSysRole(SysRoleDTO sysRoleDTO) throws ServiceException;
+
+    /**
+     * 修改角色
+     * @param sysRoleDTO
+     * @return
+     * @throws ServiceException
+     */
+    int updateSysRole(SysRoleDTO sysRoleDTO) throws ServiceException;
 }
