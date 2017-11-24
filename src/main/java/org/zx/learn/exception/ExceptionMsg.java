@@ -9,7 +9,9 @@ public enum ExceptionMsg {
     ILLEGAL_ARGUMENT_ERROR_MSG(1002, "请求参数失败"),
 
     NO_DATA_ERROR_MSG(2001, "没有数据返回"),
-    NO_CHANGE_ERROR_MSG(2002,"操作影响0行");
+    NO_CHANGE_ERROR_MSG(2002,"操作影响0行"),
+    CERTIFICATION_ERROR_MSG(8,"认证信息获取失败");
+
     private Integer code;
     private String msg;
 
