@@ -38,4 +38,7 @@ public interface UserService {
 
     int deleteUserInfoById(List<Integer> ids) throws ServiceException;
 
+    int editUserInfoById(UserDTO userDTO) throws ServiceException;
+
+    Map<String, String> addUserInfo(UserDTO userDTO, AuthDTO authDTO);
 }
