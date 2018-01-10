@@ -59,4 +59,7 @@ public interface UserService {
      * @throws ServiceException 业务层异常
      */
     List<String> getUserStringPermissions(Integer authId) throws ServiceException;
+    int editUserInfoById(UserDTO userDTO) throws ServiceException;
+
+    Map<String, String> addUserInfo(UserDTO userDTO, AuthDTO authDTO);
 }
