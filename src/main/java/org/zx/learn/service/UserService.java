@@ -36,6 +36,27 @@ public interface UserService {
      */
     List<UserDTO>getAllUser(Map<String, String> paramsMap);
 
+    /**
+     * 根据id删除用户
+     * @param ids
+     * @return
+     * @throws ServiceException
+     */
     int deleteUserInfoById(List<Integer> ids) throws ServiceException;
 
+    /**
+     * 根据用户id获取用户信息
+     * @param id
+     * @return
+     * @throws ServiceException
+     */
+    UserDTO getUserById(Integer id)  throws ServiceException;
+
+    /**
+     * 根据用户认证id获取权限信息
+     * @param authId 认证信息id
+     * @return 用户权限信息
+     * @throws ServiceException 业务层异常
+     */
+    List<String> getUserStringPermissions(Integer authId) throws ServiceException;
 }

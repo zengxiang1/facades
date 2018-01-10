@@ -35,6 +35,12 @@ public interface ResourceService {
 
     /**
      * 删除资源
+     * @param ids 需要删除的ids列表
+     * @return 更新的行数
+     * @throws ServiceException
+     * @see org.zx.learn.exception.ExceptionMsg;
      */
     int deleteResource(List<Integer> ids) throws ServiceException;
+
+
 }
