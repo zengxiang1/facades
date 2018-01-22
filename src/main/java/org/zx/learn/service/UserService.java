@@ -58,8 +58,23 @@ public interface UserService {
      * @return 用户权限信息
      * @throws ServiceException 业务层异常
      */
-    List<String> getUserStringPermissions(Integer authId) throws ServiceException;
+    List<SysResourceDTO> listResourcePermissions(Integer authId) throws ServiceException;
+
+    /**
+     * 编辑用户
+     * @param userDTO
+     * @return
+     * @throws ServiceException
+     */
     int editUserInfoById(UserDTO userDTO) throws ServiceException;
 
+    /**
+     * 新增用户
+     * @param userDTO
+     * @param authDTO
+     * @return
+     */
     Map<String, String> addUserInfo(UserDTO userDTO, AuthDTO authDTO);
+
+
 }
